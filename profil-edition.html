@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="edit-page">
+        <header class="edit-page__title">
+            <h1>Modifier mon profil</h1>
+        </header>
+
+        <form class="edit-form" action="#" method="post">
+            <section class="edit-form__field">
+                <label for="name">Nom : </label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </section>
+            
+            <section class="edit-form__field">
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </section>
+
+            <section class="edit-form__field">
+                <label for="phone">Téléphone : </label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </section>
+
+            <section class="edit-form__actions">
+                <button class="edit-form__submit" type="submit">Enregistrer</button>
+
+                <a class="edit-form__cancel-button" href="">Annuler</a>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
