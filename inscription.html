@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <main>
+        <form action="se-connecter.html">
+  
+    
+    
+  <fieldset>
+    <legend>Inscription</legend>
+    <div>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    </div>
+
+    <div>
+      <label for="prénom">Prénom :</label>
+      <input type="text" id="prénom" name="prenom" placeholder="Votre prénom" required>
+    </div>
+    <div>
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+    </div>
+
+
+   
+    <div>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" required>
+    </div>
+
+   <div>
+      <label for="confirm-password">Confirmer le mot de passe :</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+    </div>
+
+
+    
+
+
+</fieldset>
+<fieldset>
+    <legend>Validation</legend>
+
+    <div class="cgv">
+<input type="checkbox" id="accept-cgv" name="accept_cgv" required>
+    <label for="accept-cgv">
+      J'accepte les <a href="cgv.html" target="_blank" rel="noopener noreferrer">Conditions Générales de Vente (CGV)</a> 
+    </label>
+    </div>
+    <div class="rgpd">
+       <input type="checkbox" id="accept-privacy" name="accept_privacy" required>
+    <label for="accept-privacy">
+      J'ai lu et j'accepte la <a href="rgpd.html" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a> 
+    </label> 
+
+    </div>
+
+</fieldset>
+
+<div>
+      <button type="submit">S'inscrire</button>
+    </div>
+    </form>
+    </main>
+</body>
+</html>
