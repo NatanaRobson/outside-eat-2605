@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Graphique</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="ff-1">
+    
+    <header class="header">
+        <img src="" alt="Logo OUTSIDE EAT to add" style="height:128px; margin-top:1.2rem;">
+        <hgroup>
+            <h1>Kit Graphique OUTSIDE EAT</h1>
+            <p class="demo">Thème #1</p>
+        </hgroup>
+        <a id="theme" href="#">🌗</a>
+    </header>   
+    <main>
+        <div class="container">
+            <section>
+                <h2>Typographie</h2>
+                <div class="demo">
+                    <h1>Exemple H1 — Titre principal</h1>
+                    <h2>Exemple H2 — Titre secondaire</h2>
+                    <h3>Exemple H3 — Sous-titre</h3>
+                    <h4>Exemple H4 — Petit titre</h4>
+                    <p><strong>Exemple de paragraphes :</strong></p>
+                    <p>Un développeur doit impérativement respecter la charte graphique et les consignes fournies par l’équipe design afin d'assurer la conformité de l'interface utilisateur.
+                    </p>
+                    <ol>
+                        <li><a href="#">Liens hypertexte</a> pour assurer la navigation</li>
+                        <li>Respect des couleurs</li>
+                        <li>Respect de la typographie</li>
+                        <li>Respect des marges et espacements</li>
+                    </ol>
+                    <p>Le <strong>texte en évidence</strong> permet de mettre en avant les informations clés. Le <i>texte en italique</i> apporte des nuances ou des précisions sémantiques. 
+                        Le respect strict de la charte graphique n’est pas une option mais <u>une obligation professionnelle</u>, car il garantit la cohérence visuelle et l’expérience utilisateur. 
+                        Même dans un simple composant, un extrait de code comme <code>const buttonClass = "primary";</code> doit être intégré en respectant les styles définis, afin d’assurer une homogénéité avec le rendu final.</p>
+                    <p>Les <small>textes secondaires avec une taille réduite</small> permettent d'ajouter des informations additionnelles.</p>
+                    <p>Couleurs applicables aux textes, liens et badges</p>
+                    <p style="display:flex; flex-wrap: wrap; gap: 1rem;">
+                        <span class="badge primary">Couleur principale</span>
+                        <span class="badge secondary">Couleur secondaire</span>
+                        <span class="badge rf">CRM RF</span>
+                        <span class="badge ofp">CRM OFP</span>
+                        <span class="badge services">CRM Services</span>
+                        <span class="badge mecenat">CRM Mécénat</span></p><hr>
+                        <span class="badge error">Erreur</span>
+                        <span class="badge warning">Avertissement</span>
+                        <span class="badge info">Information</span>
+                        <span class="badge success">Succès</span>
+                    <p></p>
+                    <ul>
+                        <li><button class="btn primary">Bouton primaire</button></li>
+                    </ul>
+                    <button class="btn">Bouton primaire</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>Palette de couleurs</h2>
+                <p>Variables CSS définies dans <a href="./css/crm-main.css">crm-main.css</a>.</p>
+                <div class="palette" aria-label="Palette de couleurs">
+                    <div class="swatch" style="background:var(--body-bg)">
+                        <div class="name">Fond</div>
+                        <div class="var">--body-bg</div>
+                    </div>
+                    <div class="swatch dark" style="background:var(--body-cl)">
+                        <div class="name">Texte</div>
+                        <div class="var">--body-cl</div>
+                    </div>
+                    <div class="swatch dark" style="background:var(--crm-primary);">
+                        <div class="name">Primaire</div>
+                        <div class="var">--crm-primary</div>
+                    </div>
+                    <div class="swatch" style="background:var(--crm-secondary)">
+                        <div class="name">Secondaire</div>
+                        <div class="var">--crm-secondary</div>
+                    </div>
+                    <div class="swatch dark" style="background:var(--crm-rf)">
+                        <div class="name">RF</div>
+                        <div class="var">--crm-rf</div>
+                    </div>
+                    <div class="swatch" style="background:var(--crm-ofp)">
+                        <div class="name">OFP</div>
+                        <div class="var">--crm-ofp</div>
+                    </div>
+                    <div class="swatch" style="background:var(--crm-services)">
+                        <div class="name">Services</div>
+                        <div class="var">--crm-services</div>
+                    </div>
+                    <div class="swatch dark" style="background:var(--crm-mecenat)">
+                        <div class="name">Mécénat</div>
+                        <div class="var">--crm-mecenat</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="hr" role="separator"></div>
+
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2026 CRM. Tous droits réservés.</p>
+    </footer>
+
+
+</body>
+</html>
