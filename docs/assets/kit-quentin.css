@@ -7,7 +7,7 @@ VARIABLES
     --secondary-color: #ed6840;
     --light-color: #ffffff;
     --dark-color: #000000;
-    --field-color: #FCDBCD;
+    --field-color: #fddcde;
     --title-header: Georgia, serif;
     --txt-body: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -36,6 +36,10 @@ code {
     background-color: #dddddd;
 }
 
+/* =======================
+HEADER
+======================= */
+
 .header {
     padding: 40px 20px;
     text-align: center;
@@ -55,6 +59,10 @@ code {
     margin: 0;
 }
 
+/* =======================
+MAIN PAGE
+======================= */
+
 main {
     padding: 40px 0;
 }
@@ -73,6 +81,10 @@ main {
     text-align: center;
 }
 
+/* =======================
+SECTION COULEURS
+======================= */
+
 #couleurs {
     display: flex;
     gap: 30px;
@@ -82,7 +94,7 @@ main {
 
 .color-card {
     width: 180px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 1);
 }
 
 .color-card > p {
@@ -115,12 +127,31 @@ main {
     color: var(--primary-color);
 }
 
+/* =======================
+SECTION TYPOGRAPHIES
+======================= */
+
 .typographies__title {
     font-family: var(--title-header);
 }
 
-.typographies__title > h2 {
+.main-title > h1 {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main-title__line {
+    width: 250px;
+    height: 1px;
+    margin: 0.5rem auto 2rem;
+    background-color: var(--secondary-color);
+}
+
+.secondary-title {
     color: var(--secondary-color);
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
+    font-weight: bolder;
 }
 
 .typographies__txt{
@@ -128,12 +159,17 @@ main {
     color: var(--primary-color);
 }
 
+/* =======================
+SECTION COMPOSANTS
+======================= */
+
 button {
     padding: 12px 24px;
     border: none;
     border-radius: 50px;
     font-family: var(--txt-body);
     font-size: 16px;
+    font-weight: bolder;
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -153,6 +189,66 @@ button {
 .btn-secondary {
     background-color: var(--secondary-color);
     color: var(--light-color);
+}
+
+.kit-button-logo {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.card-menu {
+    display: flex;
+    background: url('img/bg-app.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.7rem;
+    width: 285px;
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--txt-body);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 1);
+}
+
+/* .card-menu:hover {
+    transition: all ease 1s;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 1);
+
+} */
+
+.card-menu__figure {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    background-color: var(--light-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.card-menu__figure > img {
+    width: 200px;
+    height: 130px;
+}
+
+.card-menu__figure > figcaption {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card-menu__price {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.card-menu__description {
+    background-color: var(--light-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+    padding: 0.1rem;
 }
 
 .kit-form {
@@ -178,6 +274,10 @@ button {
     padding: 12px;
     font-size: 1rem;
 }
+
+/* =======================
+SECTION ICÔNES
+======================= */
 
 #icones {
     display: flex;

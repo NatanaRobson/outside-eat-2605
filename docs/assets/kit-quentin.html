@@ -26,7 +26,7 @@
         
         <div class="color-card">
           <div class="color-card__primary">
-            <p>Couleur primaire</p>
+            <p>--primary-color</p>
           </div>
           <p>code HEX : #1b296a</p>
           <p>code RGB : 27, 41, 106</p>
@@ -34,7 +34,7 @@
 
         <div class="color-card">
           <div class="color-card__secondary">
-            <p>Couleur secondaire</p>
+            <p>--secondary-color</p>
           </div>
           <p>code HEX : #ed6840</p>
           <p>code RGB : 237, 104, 64</p>
@@ -42,9 +42,9 @@
 
         <div class="color-card">
             <div class="color-card__field">
-              <p>Couleur champ formulaire</p>
+              <p>--field-color</p>
             </div>
-            <p>code HEX : #fcdbcd</p>
+            <p>code HEX : #fddcce</p>
             <p>code RGB : 252, 219, 205</p>
         </div>
       </section>
@@ -55,8 +55,12 @@
         
         <section class="typographies__txt">
           <section class="typographies__title">
-            <h1>Exemple H1 - Titre principal</h1>
-            <h2>Exemple H2 - Titre secondaire</h2>
+            <div class="main-title">
+              <div class="main-title__line"></div>
+              <h1>Titre principal</h1>
+              <div class="main-title__line"></div>
+            </div>
+            <h2 class="secondary-title">Titre secondaire</h2>
           </section>
 
           <p><strong>Exemple de paragraphes :</strong></p>
@@ -97,10 +101,26 @@
         <section class="kit-button">
           <button class="btn-primary" type="button">Valider</button>
           <button class="btn-secondary" type="button">Valider</button>
+
+          <img class="kit-button-logo" src="icones/minus.png" alt="logo moins">
+          <img class="kit-button-logo" src="icones/plus.png" alt="logo plus">
+          <img class="kit-button-logo" src="icones/trash-can.png" alt="logo trash can">
         </section>
 
+        <h3>Carte détail produit</h3>
         <section class="card-menu">
-          
+          <figure class="card-menu__figure">
+            <img src="img/pizza-margherita.jpg" alt="Image d'une pizza">
+            <figcaption>Pizza margherita</figcaption>
+          </figure>
+
+          <p class="card-menu__price"><strong>Prix : 8,95 €</strong></p>
+
+          <p class="card-menu__description"><strong>Ingrédients</strong> : farine, huile d’olive, sel, levure sèche de boulanger, tomates, mozzarella,
+            Grana Padano DOP râpé,
+            Basilic frais
+          </p>
+          <button class="btn-primary" type="button">Ajouter au panier</button>
 
         </section>
 
