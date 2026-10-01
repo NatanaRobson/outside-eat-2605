@@ -12,7 +12,26 @@
     
     
   <fieldset>
-    <legend>Inscription</legend>
+    <legend>Création compte</legend>
+    <div>
+      <p> Vous êtes : <br></p>
+      <label>
+    <input type="radio" name="statut" value="stagiaire" required>
+    Stagiaire
+</label>
+
+<label>
+    <input type="radio" name="statut" value="formateur">
+    Salarié
+</label>
+
+<label>
+    <input type="radio" name="statut" value="autre">
+    Patient
+</label>
+     
+
+    </div>
     <div>
       <label for="nom">Nom :</label>
       <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
@@ -27,7 +46,10 @@
       <input type="email" id="email" name="email" placeholder="votre@email.com" required>
     </div>
 
-
+<div>
+      <label for="numero-crm">Numéro CRM :</label>
+      <input type="text" id="numero-crm" name="numero-crm"placeholder="CRM-••••••••" required>
+    </div>
    
     <div>
       <label for="password">Mot de passe :</label>
