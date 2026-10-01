@@ -1,0 +1,24 @@
+:root{
+    /* FONT */
+    --h-font: Georgia, 'Times New Roman', Times, serif;
+    --prefered-ff: 'Times New Roman', Times, serif;
+    /* COLORS */
+    --primary-clr--rgb:rgb(27, 41, 106);
+    --primary-clr-hex:#1b296a;
+    --secondary-clr--rgb:rgb(237, 104, 64);
+    --secondary-clr--hex:#ed6840;
+}
+
+/* TYPOGRAPHIE */
+h1, h2, h3, h4{
+    font-family: var(--h-font);
+}
+
+.ff-1{
+    font-family: var(--prefered-ff);
+}
+
+/* BOUTONS */
+.rad50{
+    border-radius: 50%;
+}
