@@ -8,6 +8,10 @@ VARIABLES
     --light-color: #ffffff;
     --dark-color: #000000;
     --field-color: #fddcde;
+
+    --error: #d32f2f;
+    --warning: #e67e22;
+
     --title-header: Georgia, serif;
     --txt-body: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -102,7 +106,7 @@ SECTION COULEURS
     font-size: 14px;
 }
 
-.color-card__primary, .color-card__secondary, .color-card__field {
+.color-card__primary, .color-card__secondary, .color-card__field, .color-card__error, .color-card__warning {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +129,16 @@ SECTION COULEURS
 .color-card__field {
     background-color: var(--field-color);
     color: var(--primary-color);
+}
+
+.color-card__error {
+    background-color: var(--error);
+    color: var(--light-color);
+}
+
+.color-card__warning {
+    background-color: var(--warning);
+    color: var(--light-color);
 }
 
 /* =======================
@@ -197,6 +211,10 @@ button {
     cursor: pointer;
 }
 
+/* =======================
+CARTE PRODUIT
+======================= */
+
 .card-menu {
     display: flex;
     background: url('img/bg-app.png');
@@ -250,6 +268,21 @@ button {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
     padding: 0.1rem;
 }
+
+/* =======================
+BARRE DE NAVIGATION
+======================= */
+
+.nav-bar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+/* =======================
+FORMULAIRE
+======================= */
 
 .kit-form {
     padding: 2rem 1.25rem;
