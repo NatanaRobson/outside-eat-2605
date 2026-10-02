@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kit Graphique | Quentin Pognant-Gros</title>
+    <link rel="stylesheet" href="kit-quentin.css" />
+    <link rel="icon" href="logo/favicon.png">
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="logo/logo-outside-eat.png"
+        alt="Logo du projet"
+      />
+      <h1>Charte Graphique OutsideEat</h1>
+      <p>Référence visuelle du projet</p>
+    </header>
+
+    <main class="kit-page">
+
+      <h2>Couleurs</h2>
+
+      <section id="couleurs">
+        
+        <div class="color-card">
+          <div class="color-card__primary">
+            <p>--primary-color</p>
+          </div>
+          <p>code HEX : #1b296a</p>
+          <p>code RGB : 27, 41, 106</p>
+        </div>
+
+        <div class="color-card">
+          <div class="color-card__secondary">
+            <p>--secondary-color</p>
+          </div>
+          <p>code HEX : #ed6840</p>
+          <p>code RGB : 237, 104, 64</p>
+        </div>
+
+        <div class="color-card">
+            <div class="color-card__field">
+              <p>--field-color</p>
+            </div>
+            <p>code HEX : #fddcce</p>
+            <p>code RGB : 252, 219, 205</p>
+        </div>
+        <div class="color-card">
+            <div class="color-card__error">
+              <p>--error</p>
+            </div>
+            <p>code HEX : #d32f2f</p>
+            <p>code RGB : 211, 47, 47</p>
+        </div>
+        <div class="color-card">
+            <div class="color-card__warning">
+              <p>--warning</p>
+            </div>
+            <p>code HEX : #e67e22</p>
+            <p>code RGB : 230, 126, 34</p>
+        </div>
+      </section>
+
+      <h2>Typographies</h2>
+
+      <section id="typographies">
+        
+        <section class="typographies__txt">
+          <section class="typographies__title">
+            <div class="main-title">
+              <div class="main-title__line"></div>
+              <h1>Titre principal</h1>
+              <div class="main-title__line"></div>
+            </div>
+            <h2 class="secondary-title">Titre secondaire</h2>
+          </section>
+
+          <p><strong>Exemple de paragraphes :</strong></p>
+
+          <p>
+            Un développeur doit impérativement respecter la charte graphique et
+            les consignes fournies par l’équipe design afin d'assurer la
+            conformité de l'interface utilisateur.
+          </p>
+          <ul>
+            <li><a href="#">Liens hypertexte</a> pour assurer la navigation</li>
+            <li>Respect des couleurs</li>
+            <li>Respect de la typographie</li>
+            <li>Respect des marges et espacements</li>
+          </ul>
+
+          <p>
+            Le <strong>texte en évidence</strong> permet de mettre en avant les
+            informations clés. Le <i>texte en italique</i> apporte des nuances
+            ou des précisions sémantiques. Le respect strict de la charte
+            graphique n’est pas une option mais
+            <u>une obligation professionnelle</u>, car il garantit la cohérence
+            visuelle et l’expérience utilisateur. Même dans un simple composant,
+            un extrait de code comme
+            <code>const buttonClass = "primary";</code> doit être intégré en
+            respectant les styles définis, afin d’assurer une homogénéité avec
+            le rendu final.
+          </p>
+
+          <p>Les <small>textes secondaires avec une taille réduite</small> permettent d'ajouter des informations additionnelles.</p>
+        </section>
+      </section>
+
+      <h2>Composants</h2>
+
+      <section id="composants">
+        <h3>Boutons</h3>
+        <section class="kit-button">
+          <button class="btn-primary" type="button">Valider</button>
+          <button class="btn-secondary" type="button">Valider</button>
+
+          <img class="kit-button-logo" src="icones/minus.png" alt="logo moins">
+          <img class="kit-button-logo" src="icones/plus.png" alt="logo plus">
+          <img class="kit-button-logo" src="icones/trash-can.png" alt="logo trash can">
+        </section>
+
+        <h3>Carte détail produit</h3>
+        <section class="card-menu">
+          <figure class="card-menu__figure">
+            <img src="img/pizza-margherita.jpg" alt="Image d'une pizza">
+            <figcaption>Pizza margherita</figcaption>
+          </figure>
+
+          <p class="card-menu__price"><strong>Prix : 8,95 €</strong></p>
+
+          <p class="card-menu__description"><strong>Ingrédients</strong> : farine, huile d’olive, sel, levure sèche de boulanger, tomates, mozzarella,
+            Grana Padano DOP râpé,
+            Basilic frais
+          </p>
+          <button class="btn-primary" type="button">Ajouter au panier</button>
+
+        </section>
+
+        <h3>Barre de navigation</h3>
+
+        <nav class="nav-bar">
+          <ul>
+            <a href="#"><img src="icones/icone-accueil.png" alt="Bouton accueil" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-menu.png" alt="Bouton menu" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-notification.png" alt="Bouton notification" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-achats.png" alt="Bouton achats" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-profil.png" alt="Bouton profil" style="width: 45px; height: 45px"></a>
+          </ul>
+        </nav>
+
+        <h3>Formulaire</h3>
+        <form class="kit-form" action="#" method="post">
+          <div class="kit-form__field">
+            <label for="firstName">Prénom : </label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              autocomplete="given-name"
+            />
+          </div>
+
+          <div class="kit-form__field">
+            <label for="lastName">Nom : </label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              autocomplete="family-name"
+            />
+          </div>
+
+          <div class="kit-form__field">
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" id="email" autocomplete="email" />
+          </div>
+
+          <div class="kit-form__field">
+            <label for="password">Mot de passe : </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="kit-form__field">
+            <label for="msg">Message : </label>
+            <textarea name="msg" id="msg" rows="10" cols="30"></textarea>
+          </div>
+
+          <button class="btn-primary" type="submit">Envoyer</button>
+        </form>
+      </section>
+
+      <h2>Icônes</h2>
+
+      <section id="icones">
+        
+        <figure>
+          <img src="icones/icone-profil.png" alt="Icône profil">
+          <figcaption>Icône profil</figcaption>
+        </figure>
+        <figure>
+          <img src="icones/icone-accueil.png" alt="Icône accueil">
+          <figcaption>Icône accueil</figcaption>
+        </figure>
+        <figure>
+          <img src="icones/icone-achats.png" alt="Icône achats">
+          <figcaption>Icône achats</figcaption>
+        </figure>
+        <figure>
+          <img src="icones/icone-notification.png" alt="Icône notification">
+          <figcaption>Icône notification</figcaption>
+        </figure>
+        <figure>
+          <img src="icones/icone-menu.png" alt="Icône menu">
+          <figcaption>Icône menu</figcaption>
+        </figure>
+
+      </section>
+
+    </main>
+
+    <footer>OutsideEat - Les 4 Fantastiques</footer>
+  </body>
+</html>

@@ -1,0 +1,376 @@
+/* =======================
+VARIABLES
+======================= */
+
+:root {
+    --primary-color: #1b296a;
+    --secondary-color: #ed6840;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --field-color: #fddcde;
+
+    --error: #d32f2f;
+    --warning: #e67e22;
+
+    --title-header: Georgia, serif;
+    --txt-body: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ==================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+
+    background: url(img/bg-app.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+code {
+    background-color: #dddddd;
+}
+
+/* =======================
+HEADER
+======================= */
+
+.header {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header__logo {
+    display: block;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* =======================
+MAIN PAGE
+======================= */
+
+main {
+    padding: 40px 0;
+}
+
+.kit-page {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.kit-page > section {
+    margin-bottom: 50px;
+}
+
+.kit-page > h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* =======================
+SECTION COULEURS
+======================= */
+
+#couleurs {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.color-card {
+    width: 180px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.color-card > p {
+    margin: 10px 15px;
+    font-size: 14px;
+}
+
+.color-card__primary, .color-card__secondary, .color-card__field, .color-card__error, .color-card__warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+    text-align: center;
+}
+
+.color-card__primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.color-card__secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.color-card__field {
+    background-color: var(--field-color);
+    color: var(--primary-color);
+}
+
+.color-card__error {
+    background-color: var(--error);
+    color: var(--light-color);
+}
+
+.color-card__warning {
+    background-color: var(--warning);
+    color: var(--light-color);
+}
+
+/* =======================
+SECTION TYPOGRAPHIES
+======================= */
+
+.typographies__title {
+    font-family: var(--title-header);
+}
+
+.main-title > h1 {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main-title__line {
+    width: 250px;
+    height: 1px;
+    margin: 0.5rem auto 2rem;
+    background-color: var(--secondary-color);
+}
+
+.secondary-title {
+    color: var(--secondary-color);
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
+    font-weight: bolder;
+}
+
+.typographies__txt{
+    font-family: var(--txt-body);
+    color: var(--primary-color);
+}
+
+/* =======================
+SECTION COMPOSANTS
+======================= */
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--txt-body);
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.kit-button {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.kit-button-logo {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/* =======================
+CARTE PRODUIT
+======================= */
+
+.card-menu {
+    display: flex;
+    background: url('img/bg-app.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.7rem;
+    width: 285px;
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--txt-body);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 1);
+}
+
+/* .card-menu:hover {
+    transition: all ease 1s;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 1);
+
+} */
+
+.card-menu__figure {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    background-color: var(--light-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.card-menu__figure > img {
+    width: 200px;
+    height: 130px;
+}
+
+.card-menu__figure > figcaption {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card-menu__price {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.card-menu__description {
+    background-color: var(--light-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+    padding: 0.1rem;
+}
+
+/* =======================
+BARRE DE NAVIGATION
+======================= */
+
+.nav-bar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+/* =======================
+FORMULAIRE
+======================= */
+
+.kit-form {
+    padding: 2rem 1.25rem;
+    color: var(--primary-color);
+}
+
+.kit-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.kit-form__field label {
+    font-family: var(--txt-body);
+    font-size: 1.3rem;
+}
+
+.kit-form__field input, .kit-form__field textarea {
+    background-color: #FCDBCD;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* =======================
+SECTION ICÔNES
+======================= */
+
+#icones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    margin: 0;
+    padding: 15px;
+}
+
+figure img {
+    width: 45px;
+    height: 45px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+footer {
+    padding: 25px 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    font-family: var(--txt-body);
+}
+
+/* =======================
+MOBILE
+======================= */
+
+@media (max-width: 767px) {
+    .kit-page {
+        width: 100%;
+    }
+
+    #couleurs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+}

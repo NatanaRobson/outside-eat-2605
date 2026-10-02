@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier mon profil | OutsideEat</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <img src="assets/icones/arrow-button.png" alt="Bouton retour">
+
+        <img src="assets/logo/favicon.png" alt="Logo OutsideEat">
+
+        <! -- Temporaire à discuter avec l'équipe -->
+        <button class="theme-toggle" type="button" aria-label="Activer le mode sombre">🌗</button>
+    </header>
+    <main class="edit-page">
+        <h1>Modifier mon profil</h1>
+
+        <form class="edit-form" action="#" method="post">
+
+            <section class="edit-form__field">
+                <label for="name">Nom : </label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </section>
+            
+            <section class="edit-form__field">
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </section>
+
+            <section class="edit-form__field">
+                <label for="phone">Téléphone : </label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </section>
+
+            <section class="edit-form__actions">
+                <button class="edit-form__submit" type="submit">Enregistrer</button>
+
+                <a class="edit-form__cancel-button" href="">Annuler</a>
+            </section>
+            
+        </form>
+    </main>
+    <nav class="nav-bar">
+        <ul>
+            <a href="#"><img src="icones/icone-accueil.png" alt="Bouton accueil" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-menu.png" alt="Bouton menu" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-notification.png" alt="Bouton notification" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-achats.png" alt="Bouton achats" style="width: 45px; height: 45px"></a>
+            <a href="#"><img src="icones/icone-profil.png" alt="Bouton profil" style="width: 45px; height: 45px"></a>
+        </ul>
+    </nav>
+</body>
+</html>
